@@ -1,0 +1,44 @@
+{
+  "name": "virtual-event-management",
+  "version": "1.0.0",
+  "description": "Assignment 3 for backend engineering launchpad",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "pretest": "node -e \"if (process.version.slice(1).split('.')[0] < 18) { console.error('Unsupported Node.js version, please use version 18'); process.exit(1); }\"",
+    "test": "NODE_ENV=testing NODE_OPTIONS=--experimental-vm-modules jest",
+    "dev": "nodemon src/index.js"
+  },
+  "author": "Charanjit Singh",
+  "license": "ISC",
+  "devDependencies": {
+    "@faker-js/faker": "^9.4.0",
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.9",
+    "supertest": "^7.0.0"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "joi": "^17.13.3",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.9.5",
+    "nodemailer": "^6.10.0"
+  },
+  "engines": {
+    "node": ">= 18.0.0"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/charanjsingh29/Virtual-Event-Management.git"
+  },
+  "bugs": {
+    "url": "https://github.com/charanjsingh29/Virtual-Event-Management.git/issues"
+  },
+  "homepage": "https://github.com/charanjsingh29/Virtual-Event-Management.g#readme"
+}
